@@ -1,6 +1,3 @@
-n = int(input('Введите натуральное число\n'))
-
-
 def negr(n):
     k = 0
     while (n != 1):
@@ -16,5 +13,9 @@ def negr(n):
             print(n, k)
     return n, k
 
-
-print(negr(n))
+if __name__ == "__main__":
+    n = int(0)
+    while (n < 1):
+        n = int(input("Введите натуральное число: "))
+    res, steps = negr(n)
+    print(f"Результат: {res}\nКоличество шагов: {steps}")
